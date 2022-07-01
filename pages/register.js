@@ -3,7 +3,6 @@ import MainComponent from '../components/MainComponent';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import ButtonPage from '../components/ButtonPage';
-import Image from 'next/image';
 
 const ContainerRegister = styled.div`
   padding: 15px 0;
@@ -86,7 +85,7 @@ const register = () => {
       <ContainerRegister>
         <RegisterStyle animate={{ y: [100, 0] }} transition={{ duration: 0.5 }}>
           <div className="ContainerImage">
-            <Image
+            <img
               src="/img/LogoRegister.svg"
               alt="registro"
               height="90px"

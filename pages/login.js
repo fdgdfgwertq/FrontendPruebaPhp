@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import MainComponent from '../components/MainComponent';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import ButtonPage from '../components/ButtonPage';
 
 const ContainerLogin = styled.div`
@@ -110,7 +109,7 @@ const login = () => {
         <LoginStyle animate={{ y: [100, 0] }} transition={{ duration: 0.5 }}>
           <div className="PrincipalContent">
             <div className="ContainerImage">
-              <Image
+              <img
                 src="/img/LogoLogin.svg"
                 alt="login"
                 height="90px"
